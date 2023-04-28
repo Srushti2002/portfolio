@@ -47,7 +47,7 @@ export default function Home() {
       <Headerr />
       {/* <ColorButton /> */}
       <Aboutus />
-      <Skills /> 
+      {/* <Skills />  */}
       <Projects />
       <Contact />
     </div>
