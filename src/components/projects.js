@@ -3,15 +3,18 @@ import classes from '../styles/projects.module.scss'
 const projectInfo = [
     {
         name: "asd",
-        description: "asdfgh zxcvbn qwerty"
+        description: "asdfgh zxcvbn qwerty",
+        key: 1
     },
     {
         name: "asd",
-        description: "asdfgh zxcvbn qwerty"
+        description: "asdfgh zxcvbn qwerty",
+        key: 2
     },
     {
         name: "asd",
-        description: "asdfgh zxcvbn qwerty"
+        description: "asdfgh zxcvbn qwerty",
+        key: 3
     }
 ]
 

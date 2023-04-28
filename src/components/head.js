@@ -56,7 +56,7 @@ export default function Headerr(){
         
             </div>
             <div className={classes.headImg}>
-                <img src = 'https://cdn5.vectorstock.com/i/1000x1000/45/39/avatar-woman-with-laptop-design-vector-31604539.jpg' alt="photo" />
+                <Image src = 'https://cdn5.vectorstock.com/i/1000x1000/45/39/avatar-woman-with-laptop-design-vector-31604539.jpg' alt="photo" />
             </div>
             </div>
             {/* <div className={classes.headLink}>

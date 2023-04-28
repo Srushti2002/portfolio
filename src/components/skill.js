@@ -6,21 +6,24 @@ const skillInfo = [
         width: 75,
 
         name: "Web Development",
-        percentage: "75%"
+        percentage: "75%",
+        key: 1
         
         
     },
     {
         width: 50,
         name: "Data Science",
-        percentage: "50%"
+        percentage: "50%",
+        key: 2
         
         
     },
     {
         width: 65,
         name: "Machine Learning",
-        percentage: "60%"
+        percentage: "60%",
+        key: 3
         
         
     }
