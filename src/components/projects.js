@@ -2,18 +2,18 @@ import classes from '../styles/projects.module.scss'
 
 const projectInfo = [
     {
-        name: "asd",
-        description: "asdfgh zxcvbn qwerty",
+        name: "Apple Clone",
+        description: "The website has been developed using the React framework and serves as a replica of a well-known Apple website in India.",
         key: 1
     },
     {
-        name: "asd",
-        description: "asdfgh zxcvbn qwerty",
+        name: "Restaurant Website",
+        description: "A Bootstrap-designed website that enables customers to make table reservations and place food orders online., CSS, and JS.",
         key: 2
     },
     {
-        name: "asd",
-        description: "asdfgh zxcvbn qwerty",
+        name: "Custom Video Player",
+        description: "A customized video player that can be controlled by the user through keys, developed with HTML, CSS, and JS.",
         key: 3
     }
 ]
