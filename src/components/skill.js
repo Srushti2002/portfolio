@@ -2,30 +2,22 @@ import classes from '../styles/skill.module.scss'
 
 const skillInfo = [
     {
-        
         width: 75,
-
         name: "Web Development",
         percentage: "75%",
         key: 1
-        
-        
     },
     {
         width: 50,
         name: "Data Science",
         percentage: "50%",
         key: 2
-        
-        
     },
     {
         width: 65,
         name: "Machine Learning",
         percentage: "60%",
         key: 3
-        
-        
     }
     
 
@@ -36,11 +28,9 @@ export default function Skills(){
             <p className={classes.skillHeading}  data-aos="fade-up">Skills</p>
             <div className={classes.skillSet}  data-aos="fade-up">
 
-            {skillInfo.map((skill  ) =>  {
+            {skillInfo.map((skill) =>  {
                 return(
-                    
-                        
-                        <div className={classes.skillCase} key = {skill.key}>
+                        <div key = {skill.key} className={classes.skillCase}>
                                 <p className={classes.skillName}> {skill.name}   </p>
                             <div className={classes.skillSection}>
 
