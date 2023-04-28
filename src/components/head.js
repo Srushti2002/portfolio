@@ -2,6 +2,9 @@ import React from "react"
 import classes from '../styles/head.module.scss'
 import Pcnavbar from "./pcnavbar"
 
+
+import Image from "next/image"
+
 export default function Headerr(){
 
     
