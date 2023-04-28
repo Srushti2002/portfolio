@@ -23,7 +23,7 @@ export default function Projects(){
         <div className={classes.projectRoot} id="newProject">
             <p className={classes.projectTitle} data-aos="fade-up">Projects</p>
             {
-                projectInfo.map((project), key => {
+                projectInfo.map((project)      => {
                     return(
                         <div className={classes.projectHolder} data-aos="fade-up">
                             <div className={classes.projectEach}>
