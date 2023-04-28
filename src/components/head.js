@@ -1,6 +1,7 @@
 import React from "react"
 import classes from '../styles/head.module.scss'
 import Pcnavbar from "./pcnavbar"
+import myphoto from '../images/profile_photo.jpeg'
 
 
 import Image from "next/image"
@@ -59,7 +60,7 @@ export default function Headerr(){
         
             </div>
             <div className={classes.headImg}>
-                <img className={classes.headMainImg} src = 'https://cdn5.vectorstock.com/i/1000x1000/45/39/avatar-woman-with-laptop-design-vector-31604539.jpg' alt="photo" />
+                <Image className={classes.headMainImg} src={myphoto} alt="photo" />
             </div>
             </div>
             {/* <div className={classes.headLink}>
