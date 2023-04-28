@@ -14,7 +14,7 @@ export default function Navbar(){
              <div>
                 <GiHamburgerMenu onClick={toggle} height="31px" width="21px" />
                 {show ?
-                <ul     data-aos="fade-up">
+                <ul onClick={toggle}    data-aos="fade-up">
                     <li><a href="#newHead">Head</a></li>
                     <li><a href="#newAboutUs">About me</a></li>
                     <li><a href="#newSkill">Skills</a></li>

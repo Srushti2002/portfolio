@@ -29,7 +29,7 @@ const skillInfo = [
 ]
 export default function Skills(){
     return(
-        <div className={classes.skillRoot}>
+        <div className={classes.skillRoot} id="newSkill">
             <p className={classes.skillHeading}  data-aos="fade-up">Skills</p>
             <div className={classes.skillSet}  data-aos="fade-up">
 

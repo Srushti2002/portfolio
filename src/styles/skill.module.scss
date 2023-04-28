@@ -52,7 +52,9 @@
                     overflow: hidden;
                     
                     .skillBarColored{
-                        background-color: #F9749C;
+                        
+                        
+                        background-color:    #33272A;
                         height: 100%;
     
                         position: absolute;
@@ -64,9 +66,11 @@
                 
                 }
                     .skillBarEmpty{
-                            background-color: #432156;    
+                            
+                        
+                        background-color:    #6d585d;
                             height: 10px;
-                            transform: translateY(10px);
+                            transform: translateY(7.5px);
                             width: 100%;
     
                             position: absolute;
@@ -156,7 +160,8 @@
                             overflow: hidden;
                             
                             .skillBarColored{
-                                background-color: #F9749C;
+                                
+                                background-color:    #33272A;
                                 height: 100%;
     
                                 position: absolute;
@@ -173,7 +178,10 @@
                             .skillBarEmpty{
 
                                 
-                            background-color: #432156;    
+                            
+                                
+
+                                background-color:    #6d585d;
                             height: 10px;
                             transform: translateY(7.5px)       ;
                             width: 100%;
