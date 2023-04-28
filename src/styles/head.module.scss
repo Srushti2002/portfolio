@@ -54,7 +54,7 @@
                 justify-content:center;
                 text-align: center;
         
-                img{
+                .headMainImg{
                     width: 63vh;
                     height: 63vh;
                     border-radius: 50%;
@@ -135,7 +135,7 @@
                 }
                 .headImg{
                     transform: translateY(-87%);
-                    img{
+                    .headMainImg{
                     transform: translateX(-15.5%);
 
                         height: 30.7vh;
