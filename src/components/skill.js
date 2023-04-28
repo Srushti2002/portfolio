@@ -36,7 +36,7 @@ export default function Skills(){
             <p className={classes.skillHeading}  data-aos="fade-up">Skills</p>
             <div className={classes.skillSet}  data-aos="fade-up">
 
-            {skillInfo.map((skill) =>  {
+            {skillInfo.map((skill, key) =>  {
                 return(
                     
                         
