@@ -69,6 +69,93 @@
      
 }
 
+
+
+
+@media (max-width: 1000px){
+    .headRoot{
+        border: 10px solid #F9749C;
+        border-bottom:none;
+        .headSubRoot{
+            
+            padding: 10px 0px 210px 5px;
+            background-color: #FAEEE7;
+            .headRow{
+                display:flex;
+                flex-direction:row;
+                align-items: center;
+                justify-content: center;
+                
+            
+                
+                .headWrite{
+                    transform: translateY(63%);
+                   
+                    
+                    display: flex;
+                    flex-direction: column;
+                    padding-left: 0px;
+                   
+                    .headWriteMain{
+                        text-align:center;
+                    justify-content:center;
+
+                        font-size: 47px;
+                        padding: 10px 30px 5px 30px;
+                    }
+                    .headWriteSubData{
+                        text-align: justify;
+                    justify-content:center;
+
+                        font-size: 31px;
+                        padding: 10px 30px 10px 30px;
+    
+                    }
+
+                    .headLink{
+                        text-align: center;
+                        justify-content: center;
+                        font-size:18px;
+                        color: #33272A;
+                        
+                        
+
+                        
+                        
+                        .headContant{
+                            color: #33272A;
+                             text-align:center;
+                             justify-content: center;
+                             padding-left:0px;
+                
+                            a{
+                                 padding: 10px 10px 10px 10px;
+                                 color: #33272A;
+                            }
+                        }
+                    }
+                
+                }
+                .headImg{
+                    transform: translateY(59%);
+                    .headMainImg{
+                    transform: translateX(-1.5%);
+
+                        height: 25.7vh;
+                        width: 25.7vh;
+                        
+                        border-radius: 50%;
+                        border: 10px dotted #F9749C;
+                    }
+                }  
+    
+            }
+            
+     
+        }
+           }
+
+}
 @media (max-width: 710px){
     .headRoot{
         border: 5px solid #F9749C;
@@ -114,11 +201,88 @@
                         justify-content: center;
                         font-size:18px;
                         color: #33272A;
-                        
-                        
+                                                
+                        .headContant{
+                            color: #33272A;
+                             text-align:center;
+                             justify-content: center;
+                             padding-left:0px;
+                
+                            a{
+                                 padding: 10px 10px 10px 10px;
+                                 color: #33272A;
+                            }
+                        }
+                    }
+                
+                }
+                .headImg{
+                    transform: translateY(-71%);
+                    .headMainImg{
+                    transform: translateX(-1.5%);
 
+                        height: 30.5vh;
+                        width: 30.5vh;
                         
-                        
+                        border-radius: 50%;
+                        border: 10px dotted #F9749C;
+                    }
+                }  
+    
+            }
+            
+     
+        }
+           }
+
+}
+
+@media (max-width: 450px){
+    .headRoot{
+        border: 5px solid #F9749C;
+        border-bottom:none;
+        .headSubRoot{
+            
+            padding: 10px 0px 240px 5px;
+            background-color: #FAEEE7;
+            .headRow{
+                display:flex;
+                flex-direction:column;
+                align-items: center;
+                justify-content: center;
+                
+            
+                
+                .headWrite{
+                    transform: translateY(137%);
+                   
+                    
+                    display: flex;
+                    flex-direction: column;
+                    padding-left: 0px;
+                   
+                    .headWriteMain{
+                        text-align:center;
+                    justify-content:center;
+
+                        font-size: 47px;
+                        padding: 10px 30px 5px 30px;
+                    }
+                    .headWriteSubData{
+                        text-align: justify;
+                    justify-content:center;
+
+                        font-size: 25px;
+                        padding: 10px 30px 10px 30px;
+    
+                    }
+
+                    .headLink{
+                        text-align: center;
+                        justify-content: center;
+                        font-size:18px;
+                        color: #33272A;
+                                                
                         .headContant{
                             color: #33272A;
                              text-align:center;
@@ -151,4 +315,91 @@
      
         }
            }
+}
+
+
+
+@media (max-width: 305px){
+    .headRoot{
+    border: 5px solid #F9749C;
+    border-bottom:none;
+    .headSubRoot{
+        
+        padding: 10px 0px 147px 5px;
+        background-color: #FAEEE7;
+        .headRow{
+            display:flex;
+            flex-direction:column;
+            align-items: center;
+            justify-content: center;
+            
+        
+            
+            .headWrite{
+                transform: translateY(90%);
+               
+                
+                display: flex;
+                flex-direction: column;
+                padding-left: 0px;
+               
+                .headWriteMain{
+                    text-align:center;
+                justify-content:center;
+
+                    font-size: 41px;
+                    padding: 10px 21px 5px 21px;
+                }
+                .headWriteSubData{
+                    text-align: justify;
+                justify-content:center;
+
+                    font-size: 20px;
+                    padding: 10px 30px 10px 30px;
+
+                }
+
+                .headLink{
+                    text-align: center;
+                    justify-content: center;
+                    font-size:18px;
+                    color: #33272A;
+                    
+                    
+
+                    
+                    
+                    .headContant{
+                        color: #33272A;
+                         text-align:center;
+                         justify-content: center;
+                         padding-left:0px;
+            
+                        a{
+                             padding: 10px 10px 10px 10px;
+                             color: #33272A;
+                        }
+                    }
+                }
+            
+            }
+            .headImg{
+                transform: translateY(-121%);
+                .headMainImg{
+                transform: translateX(-15.5%);
+
+                    height: 24.7vh;
+                    width: 24.7vh;
+                    
+                    border-radius: 50%;
+                    border: 10px dotted #F9749C;
+                }
+            }  
+
+        }
+        
+ 
+    }
+       }
+
 }

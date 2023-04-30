@@ -15,6 +15,16 @@ const projectInfo = [
         name: "Custom Video Player",
         description: "A customized video player that can be controlled by the user through keys, developed with HTML, CSS, and JS.",
         key: 3
+    },
+    {
+        name: "Rheumatoid Arthritis Prediction",
+        description: "A prognostic model has been developed for Rheumatoid Arthritis, an autoimmune and inflammatory disease, utilizing OpenCV, machine learning, and deep learning techniques. The model is designed to predict the presence of arthritis in patients by analyzing images.",
+        key : 4
+    },
+    {
+        name: "dfghdg",
+        description: " aadsfs dfsd dhdr",
+        key: 5
     }
 ]
 

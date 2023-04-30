@@ -1,4 +1,5 @@
 import classes from '../styles/skill.module.scss'
+import Skillsvg from "../svg/svg_component/skillsvg"
 
 const skillInfo = [
     {
@@ -26,6 +27,7 @@ export default function Skills(){
     return(
         <div className={classes.skillRoot} id="newSkill">
             <p className={classes.skillHeading}  data-aos="fade-up">Skills</p>
+            <div className={classes.skillImgHolder}>
             <div className={classes.skillSet}  data-aos="fade-up">
 
             {skillInfo.map((skill) =>  {
@@ -62,6 +64,8 @@ export default function Skills(){
             )
         }
             
+            </div>
+            <Skillsvg />
             </div>
         </div>
     )

@@ -16,7 +16,10 @@
         margin: 10px 0px 52px 0px; 
         font-weight: bold;
     }
-    .skillSet{
+    .skillImgHolder{
+        display: flex;
+        flex-direction: row;
+    .skillSet{ 
         background-color: #FAEEE7;
         justify-content: flex-start;
         align-items: center;
@@ -26,19 +29,16 @@
             padding: 0px; 
             margin: 10px;  
             align-items:center;
-
             .skillName{
                 padding-bottom: 24px;
                 color: #33272A;
                 font-size: 25px;
             }
-    
             .skillSection{
                 display: flex;
                 flex-direction: row;
                 width: 467px;
-                align-items: center;
-                
+                align-items: center;   
                 .skillBar{
                     display: flex;
                     flex-direction: column;
@@ -46,59 +46,81 @@
                     justify-content: center;
                     width: 351px;
                     height: 25px;
-                    // left:0;
-                    // top: 0;
-
-                    overflow: hidden;
-                    
-                    .skillBarColored{
-                        
-                        
-                        background-color:    #33272A;
+                    overflow: hidden;                    
+                    .skillBarColored{                        
+                        background-color: #33272A;
                         height: 100%;
-    
                         position: absolute;
                         left:0;
                         top: 0;
-                        //transform: translateY(-10px);
                         z-index: 100;
-                        
-                
                 }
-                    .skillBarEmpty{
-                            
-                        
-                        background-color:    #6d585d;
-                            height: 10px;
-                            transform: translateY(7.5px);
-                            width: 100%;
-    
-                            position: absolute;
-                            left:0;
-                            top: 0;
-                            
-                        
+                    .skillBarEmpty{   
+                        background-color:  #6d585d;
+                        height: 10px;
+                        transform: translateY(7.5px);
+                        width: 100%;
+                        position: absolute;
+                        left:0;
+                        top: 0;
                         }
                 }
                 .skillPercentage{
                     padding-left: 10%;
                     font-size: 25px;
-    
+                }
+            }
+        } 
+    } 
+    }          
+    }
+
+    @media (max-width: 1000px){
+        .skillRoot{
+            border: 10px solid #F9749C;
+            border-top: none;
+            border-bottom: none;
+            padding: 50px 10px 50px 10px;
+            .skillHeading{
+                font-size: 41px;
+                color: #33272A;
+                margin: 10px 0px 5px 0px; 
+                font-weight: bold;
+                padding-left: 30px;
+            }
+            .skillImgHolder{
+            .skillSet{
+                padding:0px;
+               .skillCase{
+                    align-items:center;
+                    padding: 10px 20px 10px 20px;
+                    .skillName{ 
+                        color: #33272A;
+                        font-size: 31px;
+                        padding-bottom: 14px;
+                    }
+                    .skillSection{
+                        display: flex;
+                        flex-direction: row;
+                        .skillBar{
+                            display: flex;
+                            flex-direction: column;
+                            position: relative;
+                            justify-content: center;
+                            width: 241px;
+                            height: 25px;
+                            overflow: hidden;                              
+                        }
+                    }
                 }
             }
         }
+        }
     
-    
-    
-    
-    }
-        
-            
     }
 
 
-    @media (max-width: 710px){
-        
+@media (max-width: 710px){
         .skillRoot{
             background-size: 100% 100%;
             height: 100%;
@@ -115,10 +137,9 @@
                 color: #33272A;
                 margin: 10px 0px 5px 0px; 
                 font-weight: bold;
-
                 padding-left: 30px;
-
             }
+            .skillImgHolder{
             .skillSet{
                 background-color: #FAEEE7;
                 justify-content: flex-start;
@@ -126,83 +147,52 @@
                 flex-wrap: wrap;
                 overflow: hidden;
                 padding:0px;
-                //padding: 10px 30px 10px 30px;
                 .skillCase{
                     align-items:center;
                     padding: 10px 20px 10px 20px;
-
-                    .skillName{
-                        
+                    .skillName{                      
                         color: #33272A;
-                        
-                        
                         font-size: 25px;
                         padding-bottom: 14px;
-                        
-
                     }
-
                     .skillSection{
                         display: flex;
                         flex-direction: row;
                         width: 467px;
                         align-items: center;
-
                         .skillBar{display: flex;
                             flex-direction: column;
                             position: relative;
                             justify-content: center;
                             width: 241px;
                             height: 25px;
-                            // left:0;
-                            // top: 0;
-        
-                            overflow: hidden;
-                            
+                            overflow: hidden;  
                             .skillBarColored{
-                                
-                                background-color:    #33272A;
+                                background-color:#33272A;
                                 height: 100%;
-    
                                 position: absolute;
                                 left:0;
                                 top: 0;
-                                //transform: translateY(-10px);
-                                z-index: 100;
-                        
-                
+                                z-index: 100;                                        
                             }
-
-
-
                             .skillBarEmpty{
-
-                                
-                            
-                                
-
-                                background-color:    #6d585d;
+                            background-color:#6d585d;
                             height: 10px;
                             transform: translateY(7.5px)       ;
                             width: 100%;
-    
                             position: absolute;
                             left:0;
                             top: 2;
-                            }
-
-                            
+                            }                            
                         }
-
                         .skillPercentage{
                             padding-left: 2%;
                             font-size: 21px;
-
                         }
                     }
-
                 }
             }
+        }
         }
     }
     

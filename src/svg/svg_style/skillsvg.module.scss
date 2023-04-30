@@ -1,0 +1,32 @@
+
+
+
+
+
+
+.skillsvg{
+    
+    fill: #33272A;
+    height: 280px;
+    width: 400px; 
+    margin: 10px 10px 10px 250px; 
+    
+}
+
+@media (max-width: 1000px){
+    
+    .skillsvg{
+        
+    fill: #33272A;
+    height: 210px;
+    width: 310px; 
+    margin: 81px 41px 10px 20px;
+    }
+}
+
+@media (max-width: 710px){
+    
+    .skillsvg{
+        display: none;
+    }
+}

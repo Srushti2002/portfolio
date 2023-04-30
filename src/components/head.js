@@ -18,28 +18,6 @@ export default function Headerr(){
         <div className={classes.headRoot}>
             <Pcnavbar data-aos="fade-up" />
             <div className={classes.headSubRoot} data-aos="fade-up">
-             {/* <nav className={classes.navBar}>
-             
-                <img className={classes.navImg} src="https://w7.pngwing.com/pngs/909/687/png-transparent-hamburger-button-hot-dog-computer-icons-pancake-hot-dog-share-icon-navbar-menu.png" onClick={toggle} />
-                {show ?
-                <ul className={classes.navBarList}>
-                    <li><a href="/head">Head</a></li>
-                    <li><a href="/aboutus">About me</a></li>
-                    <li><a href="">Skills</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href=""></a>Resume</li>
-                    <li className={classes.navCon}><a href="">LinkedIn</a></li>
-                    <li className={classes.navCon}><a href="">Github</a></li>
-                    <li className={classes.navTact}><a href="">Instagram</a></li>
-                    <li className={classes.navTact}><a href="">Mail</a></li>
-                    
-                    
-                </ul>
-                :<div></div>
-            }
-            </nav> */}
-
             <div className={classes.headRow} id="newHead">
             <div className={classes.headWrite}>
             <p className={classes.headWriteMain}>Hi, my

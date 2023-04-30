@@ -18,7 +18,7 @@
         .aboutUsHeading{
             //color: #F8F9FA;
             font-size: 50px;
-            padding-left: 140px;
+            padding-left: 140px;                  
             font-weight:bold;
         }
         .aboutUsContent{
@@ -27,6 +27,34 @@
             padding : 30px 140px 10px 140px;
         }
     }
+}
+
+@media (max-width: 1000px){
+    .aboutUsRoot{
+        //background-color: rgb(252, 243, 232);
+        padding: 45px 10px 45px 10px;
+        border: 10px solid #F9749C;
+        border-bottom:none;
+    
+    
+    border-top: none;
+    
+        
+        .aboutUsSec{
+            
+            .aboutUsHeading{
+                font-size: 41px;
+                padding-left: 19px;
+                
+            }
+            .aboutUsContent{
+                font-size: 31px;
+                padding : 10px 21px 10px 21px;
+            }
+        }
+    }
+    
+
 }
 
 @media (max-width: 710px){
