@@ -22,8 +22,8 @@ const projectInfo = [
         key : 4
     },
     {
-        name: "dfghdg",
-        description: " aadsfs dfsd dhdr",
+        name: "Emotion Detection System  ",
+        description: "An emotion prediction model that employs cutting-edge technologies such as openCv, machine learning, and deep learning to analyze facial features captured in an image and infer the emotional state of the person depicted.",
         key: 5
     }
 ]
