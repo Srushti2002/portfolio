@@ -32,6 +32,14 @@ export default function Projects(){
     return(
         <div className={classes.projectRoot} id="newProject">
             <p className={classes.projectTitle} data-aos="fade-up">Projects</p>
+            
+
+
+
+            
+
+            
+
             {
                 projectInfo.map((project) => {
                     return(
@@ -46,6 +54,8 @@ export default function Projects(){
                 }
                 )
             }
+            
+        
         </div>
     )
 }

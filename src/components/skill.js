@@ -27,8 +27,8 @@ export default function Skills(){
     return(
         <div className={classes.skillRoot} id="newSkill">
             <p className={classes.skillHeading}  data-aos="fade-up">Skills</p>
-            <div className={classes.skillImgHolder}>
-            <div className={classes.skillSet}  data-aos="fade-up">
+            <div className={classes.skillImgHolder} data-aos="fade-up">
+            <div className={classes.skillSet}>
 
             {skillInfo.map((skill) =>  {
                 return(
