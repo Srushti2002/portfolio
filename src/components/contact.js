@@ -6,9 +6,18 @@ export default function Contact(){
 
     if(state.succeeded){
         return (
-            <p className={classes.submitMessage}>Thank you for reaching out! 
+            
+            
+                <div className={classes.submitMessage}>
+                   <p className={classes.submitMessageHeading} data-aos="fade-up">Your form has been submitted.</p>
+                    <p className={classes.submitMessageBox} data-aos="fade-up">
+                        Thank you for reaching out! 
                 I appreciate your interest and 
-                will respond to your message as soon as possible.</p>
+                will respond to your message as soon as possible.
+                </p>
+                <p className={classes.submitContactLine}>Designed and developed by <a className={classes.submitMyName} href="https://linktr.ee/SrushtiDeshmukh" target="_blank">Srushti Deshmukh</a></p>
+ 
+                </div>
         )
     }
 

@@ -5,7 +5,42 @@
     background-color:#FAEEE7;
     color:#33272A;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding: 100px 20px 100px 20px;
+    padding: 97px 20px 97px 20px;
+    .submitMessageHeading{
+        padding: 10px 280px 140px 280px;
+        color: #33272A;
+        font-size: 50px;
+        text-align:center;
+        font-weight:bold;
+    }
+    .submitMessageBox{
+        background-size: 50% 50%;
+        padding: 40px 40px 40px 40px;
+        margin: 20px 200px 140px 200px;
+        text-align:center;
+        background-color: #E2216A;
+        color: #ffffff;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 21px;
+        font-weight: bold;
+        border-radius: 10px;
+    }
+    .submitContactLine{
+        font-size: 29px;
+        text-align: center;
+        padding: 31px 0px 0px 0px;
+
+        font-weight: bold;
+    .submitMyName{
+        color: #ffffff;
+        border: none;
+        border-radius: 10px;
+        background-color:#E2216A;
+        font-size: 29px;
+        font-weight: bold;
+        padding: 10px 10px 10px 10px;
+    }   
+    }
 
 }
 .contactRoot{
@@ -27,7 +62,7 @@
 
    .contactLabel{
     .contactMain{
-        padding: 30px 280px 30px 280px;
+        padding: 5vh 28vh 5vh 28vh;
         color: #33272A;
         font-size: 50px;
         text-align:center;
@@ -36,8 +71,8 @@
     }
    
     .contactBox{
-        margin: 30px 390px 30px 390px;
-        padding: 50px 100px 50px 100px;
+        margin: 5vh 47vh 5vh 47vh;
+        padding: 5vh 10vh 5vh 10vh;
         background-color: #FAEEE7;
         display:flex;
         flex-direction:column;
@@ -77,11 +112,11 @@
             color: #FFFFFF;
             background-color: #E2216A;
             font-weight: bold;
-            margin: 37px 52px;
+            margin: 3vh 3vh;
             font-size: 21px;
             border-style:solid;
             border-radius: 10px;
-            padding: 10px;
+            padding: 2vh 3vh 2vh 3vh;
 
             
         }
@@ -99,6 +134,8 @@
         text-align: center;
 
         padding: 31px 0px 0px 0px;
+        
+        font-weight: bold;
 
     .myName{
         color: #ffffff;
@@ -116,12 +153,60 @@
 }
 
 @media (max-width: 1037px){
-    .contactRoot{
+
+    .submitMessage{
+        border:10px solid #F9749C;
+        border-top:none;
+        background-color:#FAEEE7;
+        color:#33272A;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        padding: 54px 10px 67px 10px;
+
+        .submitMessageHeading{
+            padding: 30px 10px 30px 10px;
+            font-size: 41px;
+            text-align:center;
+        }
+        .submitMessageBox{
+            background-size: 50% 50%;
+            padding: 40px 40px 40px 40px;
+            margin: 67px 140px 72px 140px;
+            text-align:justify;
+            background-color: #E2216A;
+            color: #ffffff;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 25px;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+
+        .submitContactLine{
+            font-size: 31px;
+            text-align: center;
     
-        padding: 50px 10px 50px 10px;
-        
+            padding: 31px 0px 0px 0px;
+            
+        font-weight: bold;
+    
+        .submitMyName{
+            color: #ffffff;
+            border: none;
+            border-radius: 10px;
+            background-color:#E2216A;
+            font-size: 31px;
+    
+    
+            font-weight: bold;
+            padding: 3px 5px 5px 5px;
+        }   
+        }
+    
+    }
 
     
+    .contactRoot{
+    
+    padding: 50px 10px 50px 10px;
     border: 10px solid #F9749C;
     border-top: none;
 
@@ -187,6 +272,8 @@
             text-align: center;
     
             padding: 31px 0px 0px 0px;
+            
+        font-weight: bold;
     
         .myName{
             color: #ffffff;
@@ -194,6 +281,7 @@
             border-radius: 10px;
             background-color:#E2216A;
             font-size: 31px;
+            
     
     
             font-weight: bold;
@@ -208,7 +296,55 @@
 }
 
 @media (max-width: 710px){
-    
+    .submitMessage{
+        border:5px solid #F9749C;
+        border-top:none;
+        background-color:#FAEEE7;
+        color:#33272A;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        padding: 50px 10px 50px 10px;
+
+
+        
+        .submitMessageHeading{
+            
+            padding: 30px 10px 61px 10px;
+            font-size: 30px;
+            text-align:center;
+        }
+
+
+        
+        .submitMessageBox{
+            background-size: 50% 50%;
+            padding: 40px 32px 40px 32px;
+            margin: 20px 21px 75px 21px;
+            text-align:justify;
+            background-color: #E2216A;
+            color: #ffffff;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+        
+        .submitContactLine{
+            font-size: 24px;
+            text-align: center;
+            padding: 31px 10px 0px 10px;  
+            font-weight: bold;
+
+        .submitMyName{
+            color: #ffffff;
+            border: none;
+            border-radius: 10px;
+            background-color:#E2216A;
+            font-size: 21px;
+            font-weight: bold;
+            padding: 5px 5px 5px 5px;
+        }   
+        }  
+    }   
     .contactRoot{
     
         background-color: #FAEEE7;
@@ -284,13 +420,17 @@
                 font-weight: bold;
                 margin: 0px 52px;
                 font-size: 18px; 
+                
             }
         }
         .contactLastLine{
             font-size: 24px;
             text-align: center;
-    
             padding: 31px 0px 0px 0px;
+            
+        font-weight: bold;
+
+
     
         .myName{
             color: #ffffff;
@@ -298,10 +438,11 @@
             border-radius: 10px;
             background-color:#E2216A;
             font-size: 21px;
-    
-    
             font-weight: bold;
             padding: 5px 5px 5px 5px;
+
+
+
         }   
         }
        }
