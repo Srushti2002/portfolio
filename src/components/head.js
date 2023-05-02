@@ -2,7 +2,7 @@ import React from "react"
 import classes from '../styles/head.module.scss'
 import Pcnavbar from "./pcnavbar"
 
-import myPortfolioPhoto from '../images/portfolio_photo.jpg'
+// import myPortfolioPhoto from '../images/portfolio_photo.jpg'
 
 
 import Image from "next/image"
