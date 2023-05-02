@@ -39,7 +39,7 @@ export default function Headerr(){
         
             </div>
             <div className={classes.headImg}>
-                <Image className={classes.headMainImg} src={myPortfolioPhoto} alt="photo" />
+                <Image className={classes.headMainImg} src={myPortfolioPhot} alt="photo" />
             </div>
             </div>
             {/* <div className={classes.headLink}>
