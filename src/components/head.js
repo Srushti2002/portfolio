@@ -7,6 +7,7 @@ import myPortfolioPhoto from '../images/portfolio_photo.jpg'
 
 import Image from "next/image"
 
+
 export default function Headerr(){
 
     
