@@ -22,7 +22,7 @@ export default function Headerr(){
             <div className={classes.headSubRoot} data-aos="fade-up">
             <div className={classes.headRow} id="newHead">
             <div className={classes.headWrite}>
-            <p className={classes.headWriteMain}>Hi, my
+            <p className={classes.headWriteMain}>Hii, my
             name is <b>Srushti</b></p>
             <p className={classes.headWriteSubData}>I like to craft solid and scalable websites with great user experiences.</p>
             <div className={classes.headLink}>
