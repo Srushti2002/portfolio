@@ -3,6 +3,7 @@ import classes from '../styles/navbar.module.scss'
 import Navbar from './navbar'
 import { GiHamburgerMenu } from "react-icons/gi";
 
+import Swal from 'sweetalert2'
 
 
 export default function Pcnavbar(){
@@ -10,6 +11,15 @@ export default function Pcnavbar(){
 
     function click(){
         setHire(prevState => !prevState)
+    }
+
+    const Alert = () => {
+        Swal.fire({title: "The resume will be available soon",
+        color: '#33272A',
+        background: "#FAEEE7",
+        confirmButtonColor: '#F9749C',
+        
+        })
     }
     return(
         <nav className={classes.navBar} >
@@ -24,7 +34,7 @@ export default function Pcnavbar(){
                     <GiHamburgerMenu className={classes.navHireImg} onClick={click} height="31px" width="21px" />
                         {hire ?
                     <ul onClick={click}>
-                    <li><a href="">Resume</a></li>
+                    <li><a href="#" onClick={Alert}>Resume</a></li>
                     <li ><a href="https://www.linkedin.com/in/srushti-deshmukh-616111221/">LinkedIn</a></li>
                     <li><a href="https://github.com/Srushti2002">Github</a></li>
                     <li><a href="https://instagram.com/srushtideshmukh27?igshid=ZWIzMWE5ZmU3Zg==">Instagram</a></li>
@@ -34,8 +44,6 @@ export default function Pcnavbar(){
                     }
                     
                     </div>
-                    
-                    {/*          */}
                        
                 </ul>
                 
