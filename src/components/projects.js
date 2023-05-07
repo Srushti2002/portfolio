@@ -7,23 +7,23 @@ const projectInfo = [
         key: 1
     },
     {
-        name: "Restaurant Website",
+        name: "DineEase",
         description: "A Bootstrap-designed website that enables customers to make table reservations and place food orders online., CSS, and JS.",
         key: 2
     },
     {
-        name: "Custom Video Player",
+        name: "Video Player",
         description: "A customized video player that can be controlled by the user through keys, developed with HTML, CSS, and JS.",
         key: 3
     },
     {
-        name: "Rheumatoid Arthritis Prediction",
-        description: "A prognostic model has been developed for Rheumatoid Arthritis, an autoimmune and inflammatory disease, utilizing OpenCV, machine learning, and deep learning techniques. The model is designed to predict the presence of arthritis in patients by analyzing images.",
+        name: "RA Prediction",
+        description: "A model using OpenCV, machine learning, and deep learning has been developed to predict the presence of Rheumatoid Arthritis by analyzing images.",
         key : 4
     },
     {
-        name: "Emotion Detection System  ",
-        description: "An emotion prediction model that employs cutting-edge technologies such as openCv, machine learning, and deep learning to analyze facial features captured in an image and infer the emotional state of the person depicted.",
+        name: "Mood Snap",
+        description: "A model that utilizes openCv, and deep learning technologies to analyze facial features in an image and predict the emotional state of the person depicted.",
         key: 5
     }
 ]
@@ -39,6 +39,8 @@ export default function Projects(){
             
 
             
+            <div className={classes.content}>
+                <div className={classes.cards}>
 
             {
                 projectInfo.map((project) => {
@@ -46,7 +48,10 @@ export default function Projects(){
                         <div key = {project.key} className={classes.projectHolder} data-aos="fade-up" >
                             <div className={classes.projectEach}>
                                 <div className={classes.projectName}>{project.name}</div>
+                                
+                                <div className={classes.projectData}>
                                 <div className={classes.projectDescribe}>{project.description}</div>
+                                </div>
                             </div>
                         </div>
                 
@@ -54,6 +59,8 @@ export default function Projects(){
                 }
                 )
             }
+            </div>
+            </div>
             
         
         </div>

@@ -1,7 +1,7 @@
 .projectRoot{background-color: #FAEEE7;
     padding: 100px 20px 100px 20px;
     background-size: 100% 100%;
-    height: 100%;
+    height: fit-content;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color:#33272A;
     border: 10px solid #F9749C;
@@ -12,25 +12,78 @@
             padding-left: 140px;
             font-weight:bold; 
     }
+    .content{
+        width : 100%;
+        .cards{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding-right: 3px;
+            padding-left: 100px;
+            padding-top: 21px;
+            
+            
+     
 
     .projectHolder{
-            padding : 30px 140px 10px 140px;
+        height: 310px;
+        width: 310px;
+        background-color: #FAEEE7;
+        // color: #a88590;
+        // padding-right: 20px;
+        border-radius: 10px;
+        margin-left: 100px;
+        margin-bottom: 100px;
+        
+
+        cursor: pointer;
+
+        &:first-child {
+            margin-left: 10px;
+        }
+
+        
+        &:nth-child(4){
+            margin-left:5px;
+        }
+
+        
+
         .projectEach{
-            border: 10px solid #33272A;
-            border-radius: 21px;
+            border: 5px solid #33272A;
+            border-radius: 15px;
             padding: 10px 21px;
+            height: 341px;
             .projectName{
                 font-size: 31px;
-                text-align: justify;
+                text-align: left;
+                height: 20px;
+                width: 200px;
+                
+                font-weight: bold;
             }
+
+            .projectData{
+                display: flex;
+                
+                justify-content: center;
+                align-items: center;
+                height: 280px;
+                padding-top: 10px;
 
             .projectDescribe{
                 font-size: 25px;
                 text-align: justify;
             }
+
+        
+
+
+        }
         }
     }
-
+}
+}
 
 
 }
@@ -45,12 +98,54 @@
     border-top: none;
     
         .projectTitle{
-            font-size: 41px;
+                font-size: 41px;
                 padding-left: 31px;
                 font-weight: bold;
         }
+
+        .content{
+            margin-top: 50px;
+            width: 100%;
+            .cards{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                padding-right: 0px;
+                padding-left: 10px;
+                
+        
         .projectHolder{
-            padding : 21px 30px 21px 30px;
+                    padding : 21px 21px 21px 30px;
+                    height: fit-content;
+                    //width: 100%;
+                    background-color: #FAEEE7;
+                    // color: #a88590;
+                    // padding-right: 20px;
+                    border-radius: 10px;
+                    margin-left: 25px;
+                    margin-bottom: 25px;
+
+                    cursor: pointer;
+                    
+                    &:first-child {
+                        margin-left: 0px;
+                    }
+
+                    &:nth-child(2) {
+                        margin-left: 0px;
+                    }
+                    &:nth-child(3){
+                        margin-left: 0px;
+                    }
+                    &:nth-child(4) {
+                        margin-left: 0px;
+                    }
+
+
+
+                    &:nth-child(5) {
+                        margin-left: 0px;
+                    }        
             .projectEach{
                 border: 5px solid #33272A;
                 border-radius: 15px;
@@ -61,14 +156,28 @@
     
     
                 }
+                .projectData{
+                    display: flex;
+                    
+                    justify-content: center;
+                    align-items: center;
+                    //height: 280px;
+                    padding-top: 10px;
+    
     
                 .projectDescribe{
                     font-size: 25px;
                     text-align: justify;
     
                 }
+
+            }
             }
         }
+
+    }
+
+}
     }
  
 
@@ -91,8 +200,42 @@
                 padding-left: 31px;
                 font-weight: bold;
         }
+
+        .content{
+            
+            margin-top: 30px;
+            width: 100%;
+            .cards{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                padding-right: 20px;
+        
         .projectHolder{
-            padding : 10px 30px 10px 30px;
+            padding : 10px 24px 10px 24px;
+            height: fit-content;
+                    width: 100%;
+                    background-color: #FAEEE7;
+                    // color: #a88590;
+                    // padding-right: 20px;
+                    border-radius: 10px;
+                    margin-left: 25px;
+                    margin-bottom: 25px;
+
+                    cursor: pointer;
+                    
+                    &:first-child {
+                        margin-left: 0px;
+                    }
+
+                    &:nth-child(2) {
+                        margin-left: 0px;
+                    }
+                    &:nth-child(4) {
+                        margin-left: 0px;
+                    }
+                    
+
             .projectEach{
                 border: 5px solid #33272A;
                 border-radius: 15px;
@@ -103,6 +246,14 @@
     
     
                 }
+                .projectData{
+                    //display: flex;
+                    
+                    justify-content: center;
+                    align-items: center;
+                    //height: 280px;
+                    padding-top: 10px;
+    
     
                 .projectDescribe{
                     font-size: 21px;
@@ -110,7 +261,12 @@
     
                 }
             }
+            }
         }
+
+    }
+}
+
     }
      
 }

@@ -42,6 +42,10 @@ export default function Contact(){
         field="email"
         errors={state.errors}
       />
+
+<label htmlFor="email">
+        Type your message here
+      </label>
       <textarea
         id="message"
         name="message"
