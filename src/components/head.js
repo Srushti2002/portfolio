@@ -2,20 +2,14 @@ import React from "react"
 import classes from '../styles/head.module.scss'
 import Pcnavbar from "./pcnavbar"
 
-import myPortfolioPhoto from '../images/portfolio_photo.jpg'
+import myPortfolioPhoto from '../images/portfolio_photo.jpeg'
 
 
 import Image from "next/image"
 
 
-export default function Headerr(){
-
-    
-
-    
-
-
-    
+export default function Header(){
+  
     return(
         <div className={classes.headRoot}>
             <Pcnavbar data-aos="fade-up" />
@@ -40,7 +34,7 @@ export default function Headerr(){
         
             </div>
             <div className={classes.headImg}> 
-                            <Image className={classes.headMainImg} src={myPortfolioPhoto}  alt="photo" />
+                <Image className={classes.headMainImg} src={myPortfolioPhoto}  alt="photo" />
             </div>
             </div>
             {/* <div className={classes.headLink}>

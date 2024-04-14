@@ -38,7 +38,6 @@ export default function Skills(){
 
                                 <div className={classes.skillBar} >
 
-                    
 
                                     <div className={classes.skillBarColored} style={{width: `${skill.width}%`,}}   ></div>
 
@@ -56,12 +55,7 @@ export default function Skills(){
 
                 );
             }
-
-
-
-
-
-            )
+        )
         }
             
             </div>

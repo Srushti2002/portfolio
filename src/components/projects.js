@@ -7,38 +7,32 @@ const projectInfo = [
         key: 1
     },
     {
-        name: "DineEase",
-        description: "A Bootstrap-designed website that enables customers to make table reservations and place food orders online., CSS, and JS.",
+        name: "Codepen Clone",
+        description: "A React-based CodePen clone is a website where users can write code in HTML, CSS, and JavaScript, and see the output in real-time.",
         key: 2
     },
     {
-        name: "Video Player",
-        description: "A customized video player that can be controlled by the user through keys, developed with HTML, CSS, and JS.",
+        name: "ListNest",
+        description: "A React-based task management website that lets users add and remove tasks easily, keeping track of their to-do list.",
         key: 3
+    },
+    {
+        name: "DineEase",
+        description: "A Bootstrap-designed website that enables customers to make table reservations and place food orders online., CSS, and JS.",
+        key: 4
     },
     {
         name: "RA Prediction",
         description: "A model using OpenCV, machine learning, and deep learning has been developed to predict the presence of Rheumatoid Arthritis by analyzing images.",
-        key : 4
+        key : 5
     },
-    {
-        name: "Mood Snap",
-        description: "A model that utilizes openCv, and deep learning technologies to analyze facial features in an image and predict the emotional state of the person depicted.",
-        key: 5
-    }
 ]
 
 export default function Projects(){
     return(
         <div className={classes.projectRoot} id="newProject">
             <p className={classes.projectTitle} data-aos="fade-up">Projects</p>
-            
-
-
-
-            
-
-            
+      
             <div className={classes.content}>
                 <div className={classes.cards}>
 
