@@ -9,45 +9,30 @@
     border-top: none;
     .projectTitle{
         font-size: 50px;
-            padding-left: 140px;
-            font-weight:bold; 
+        padding-left: 140px;
+        font-weight:bold; 
+        padding-bottom: 50px;
     }
     .content{
         width : 100%;
         .cards{
             display: flex;
             flex-direction: row;
+            column-gap: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             flex-wrap: wrap;
-            padding-right: 3px;
-            padding-left: 100px;
             padding-top: 21px;
-            
-            
-     
 
     .projectHolder{
         height: 310px;
         width: 310px;
         background-color: #FAEEE7;
-        // color: #a88590;
-        // padding-right: 20px;
         border-radius: 10px;
-        margin-left: 100px;
-        margin-bottom: 100px;
-        
-
+        margin-bottom: 140px;
         cursor: pointer;
 
-        &:first-child {
-            margin-left: 10px;
-        }
-
-        
-        &:nth-child(4){
-            margin-left:5px;
-        }
-
-        
 
         .projectEach{
             border: 5px solid #33272A;
@@ -56,10 +41,8 @@
             height: 341px;
             .projectName{
                 font-size: 31px;
-                text-align: left;
-                height: 20px;
-                width: 230px;
-                
+                text-align: center;
+                height: 1rem;
                 font-weight: bold;
             }
 
@@ -93,9 +76,7 @@
         padding: 50px 10px 50px 10px;
         border: 10px solid #F9749C;
         border-bottom:none;
-    //border-left: none;
-    
-    border-top: none;
+        border-top: none;
     
         .projectTitle{
                 font-size: 41px;
@@ -104,48 +85,29 @@
         }
 
         .content{
-            margin-top: 50px;
-            width: 100%;
+            margin-top: 10px;
+            
+            width: 95%;
             .cards{
                 display: flex;
                 flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                justify-content:space-evenly;
                 flex-wrap: wrap;
                 padding-right: 0px;
-                padding-left: 10px;
                 
         
         .projectHolder{
-                    padding : 21px 21px 21px 30px;
                     height: fit-content;
-                    //width: 100%;
                     background-color: #FAEEE7;
-                    // color: #a88590;
-                    // padding-right: 20px;
                     border-radius: 10px;
-                    margin-left: 25px;
                     margin-bottom: 25px;
 
                     cursor: pointer;
                     
-                    &:first-child {
-                        margin-left: 0px;
-                    }
-
-                    &:nth-child(2) {
-                        margin-left: 0px;
-                    }
-                    &:nth-child(3){
-                        margin-left: 0px;
-                    }
-                    &:nth-child(4) {
-                        margin-left: 0px;
-                    }
-
-
-
-                    &:nth-child(5) {
-                        margin-left: 0px;
-                    }        
+                 
+    
             .projectEach{
                 border: 5px solid #33272A;
                 border-radius: 15px;
@@ -162,7 +124,6 @@
                     
                     justify-content: center;
                     align-items: center;
-                    //height: 280px;
                     padding-top: 10px;
     
     
@@ -186,55 +147,44 @@
 
 @media (max-width: 710px){
     .projectRoot{
-        padding: 50px 10px 50px 10px;
-        background-size: 100% 100%;
-        height: 100%;
-        //font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding: 50px 10px 50px 37px;
         border: 5px solid #F9749C;
         border-bottom:none;
-    //border-left: none;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     
     border-top: none;
     
         .projectTitle{
             font-size: 31px;
-                padding-left: 31px;
-                font-weight: bold;
+            padding-left: 0px;
+            padding-bottom: 0px;
+            font-weight: bold;
         }
 
         .content{
-            
             margin-top: 30px;
-            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
             .cards{
                 display: flex;
                 flex-direction: row;
+                align-items: center;
+                column-gap: unset;
+                justify-content: space-between;
                 flex-wrap: wrap;
-                padding-right: 20px;
         
         .projectHolder{
-            padding : 10px 24px 10px 24px;
             height: fit-content;
-                    width: 100%;
-                    background-color: #FAEEE7;
-                    // color: #a88590;
-                    // padding-right: 20px;
-                    border-radius: 10px;
-                    margin-left: 25px;
-                    margin-bottom: 25px;
-
-                    cursor: pointer;
-                    
-                    &:first-child {
-                        margin-left: 0px;
-                    }
-
-                    &:nth-child(2) {
-                        margin-left: 0px;
-                    }
-                    &:nth-child(4) {
-                        margin-left: 0px;
-                    }
+            width: auto;
+            background-color: #FAEEE7;
+            border-radius: 10px;
+            cursor: pointer;
+            display: flex;
+            padding-bottom: 30px;
+            margin: 0% auto;
                     
 
             .projectEach{
@@ -242,15 +192,11 @@
                 border-radius: 15px;
                 padding: 5px 14px;
                 height: 250px;
+                width: 200px;
                 .projectName{
-                    font-size: 25px;
-    
-    
-    
+                font-size: 25px;
                 }
                 .projectData{
-                    //display: flex;
-                    
                     justify-content: center;
                     align-items: center;
                     height: 240px;
