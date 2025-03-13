@@ -7,19 +7,20 @@ const projectInfo = [
         description: "IntelliRecruit, built with React, optimizes resumes by providing feedback and compatibility scores based on job descriptions.",
         key : 1
     },
+       
+    {
+        name: "Daily Diary",
+        description: "Built a full-stack diary app with JWT authentication, user-specific content, and AI-powered mood analysis. Hosted on Render with MongoDB Atlas. ",
+        key: 2
+    },
     {
         name: "Codepen Clone",
         description: "A React-based CodePen clone is a website where users can write code in HTML, CSS, and JavaScript, and see the output in real-time.",
-        key: 2
+        key: 3
     },
     {
         name: "ListNest",
         description: "A React-based task management website that lets users add and remove tasks easily, keeping track of their to-do list.",
-        key: 3
-    },   
-    {
-        name: "Apple Clone",
-        description: "The website has been developed using the React framework and serves as a replica of a well-known Apple website in India.",
         key: 4
     },
     {
