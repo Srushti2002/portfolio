@@ -3,20 +3,20 @@ import Skillsvg from "../svg/svg_component/skillsvg"
 
 const skillInfo = [
     {
-        width: 75,
-        name: "Web Development",
-        percentage: "75%",
+        width: 80,
+        name: "Frontend",
+        percentage: "80%",
         key: 1
     },
     {
-        width: 50,
-        name: "Data Science",
-        percentage: "50%",
+        width: 75,
+        name: "Backend",
+        percentage: "75%",
         key: 2
     },
     {
-        width: 65,
-        name: "Machine Learning",
+        width: 60,
+        name: "Database",
         percentage: "60%",
         key: 3
     }
