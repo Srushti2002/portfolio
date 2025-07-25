@@ -1,6 +1,11 @@
 import classes from '../styles/projects.module.scss'
 
 const projectInfo = [
+    {
+        name: "EduShare",
+        description: "Built a learning platform where mentors share video playlists, students track progress and take AI-generated MCQ quizzes, with async video summarization for a smoother experience. ",
+        key: 0
+    },
     
     {
         name: "Intellirecruit",
@@ -18,15 +23,16 @@ const projectInfo = [
         description: "A React-based CodePen clone is a website where users can write code in HTML, CSS, and JavaScript, and see the output in real-time.",
         key: 3
     },
-    {
-        name: "ListNest",
-        description: "A React-based task management website that lets users add and remove tasks easily, keeping track of their to-do list.",
-        key: 4
-    },
+    // {
+    //     name: "ListNest",
+    //     description: "A React-based task management website that lets users add and remove tasks easily, keeping track of their to-do list.",
+    //     key: 4
+    // },
+
     {
         name: "DrowsyGuard",
         description: "A Drowsiness Detection System employing transfer learning to identify when drivers are drowsy, alerting them to prevent road accidents.",
-        key: 5
+        key: 4
     },
 ]
 
