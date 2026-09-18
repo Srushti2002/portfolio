@@ -8,7 +8,7 @@
     .headSubRoot{
         max-width: $container;
         margin: 0 auto;
-        padding: 40px 24px 100px 24px;
+        padding: 130px 24px 100px 24px;
 
         .headRow{
             display: flex;
@@ -168,7 +168,7 @@
 @media (max-width: 900px){
     .headRoot{
         .headSubRoot{
-            padding: 20px 20px 70px 20px;
+            padding: 110px 20px 70px 20px;
 
             .headRow{
                 flex-direction: column-reverse;
@@ -190,6 +190,14 @@
                     }
                 }
             }
+        }
+    }
+}
+
+@media (max-width: 700px){
+    .headRoot{
+        .headSubRoot{
+            padding-top: 90px;
         }
     }
 }
