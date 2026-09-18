@@ -2,19 +2,12 @@ import classes from '../styles/education.module.scss'
 
 const educationInfo = [
     {
-        institution: "Institution Name",
-        degree: "Degree, Major",
-        timeline: "20XX - 20XX",
-        description: "Add a short note here — CGPA/percentage, relevant coursework, or achievements.",
+        institution: "G. H. Raisoni College of Engineering, Nagpur",
+        degree: "Bachelor of Technology in Artificial Intelligence",
+        timeline: "2020 - 2024",
+        description: "B.Tech. in Artificial Intelligence with a CGPA of 8.88, with strong foundations in software engineering, web development, data structures, and problem-solving.",
         key: 0
-    },
-    {
-        institution: "Institution Name",
-        degree: "Higher Secondary (12th)",
-        timeline: "20XX - 20XX",
-        description: "Add a short note here — percentage, stream, or achievements.",
-        key: 1
-    },
+    }
 ]
 
 export default function Education(){
