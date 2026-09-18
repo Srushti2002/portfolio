@@ -4,7 +4,7 @@ const projectInfo = [
     {
         name: "EduShare",
         description: "Built a learning platform where mentors share video playlists, students track progress and take AI-generated MCQ quizzes, with async video summarization for a smoother experience.",
-        tech: ["React", "Redux", "Tailwind CSS", "Node.js", "Express", "MongoDB", "Redis", "Docker", "Gemini AI"],
+        tech: ["React", "Redux", "Node.js", "Express", "MongoDB", "Redis", "Docker"],
         key: 0
     },
 
