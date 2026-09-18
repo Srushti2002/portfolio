@@ -14,7 +14,8 @@ const experienceInfo = [
         role: "Assistant System Engineer",
         timeline: "Aug 2024 - Dec 2025",
         techStack: ["React", "Node.js", "MongoDB", "Express.js"],
-        description: "Worked on a production insurance platform, building responsive React interfaces and Node.js APIs while handling validations, bug fixes, troubleshooting, and production issues."
+        description: "Worked on a production insurance platform, building responsive React interfaces and Node.js APIs while handling validations, bug fixes, troubleshooting, and production issues.",
+        key: 1
     },
     {
         company: "GBJ Buzz",

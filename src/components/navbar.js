@@ -24,7 +24,7 @@ export default function Navbar(){
                     <li><a href="#newEducation">Education</a></li>
                     <li><a href="#newContact">Contact</a></li>
                     <li className={classes.mobileNavDivider}></li>
-                    <li><a href="/ResumeNew (3).pdf" target="_blank">Resume</a></li>
+                    <li><a href="/Srushti_Deshmukh_CV.pdf" target="_blank">Resume</a></li>
                     <li><a href="https://www.linkedin.com/in/srushti-deshmukh-616111221/">LinkedIn</a></li>
                     <li><a href="https://github.com/Srushti2002">Github</a></li>
                     <li><a href="https://instagram.com/srushtideshmukh27?igshid=ZWIzMWE5ZmU3Zg==">Instagram</a></li>

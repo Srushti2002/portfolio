@@ -19,30 +19,27 @@ export default function Header(){
                         <p className={classes.headKicker}>Hey There,</p>
                         <h1 className={classes.headName}>I’m Srushti</h1>
                         <p className={classes.headTagline}>I build, debug & ship for the web.</p>
-                        <p className={classes.headAbout}>
-                            I’m a Full-Stack Developer. I enjoy building scalable web applications, designing clean and reliable systems, and working across both frontend and backend.
+                        <p className={classes.headAbout}>I’m a Full-Stack Developer who enjoys building scalable web applications and designing clean, reliable systems across the frontend and backend. I like turning ideas into practical solutions and solving problems that go beyond just writing code.
 
-I like turning ideas into practical solutions and solving problems that require more than just writing code. I enjoy understanding how different parts of a system fit together, improving existing solutions, and exploring new technologies along the way.
-
-For me, development is not just about making things work — it’s about making them simple, maintainable, and built to last. I’m always curious to learn, experiment, and find better ways to build and ship software.
+I enjoy understanding how systems fit together, improving existing solutions, and exploring new technologies. I’m always curious to learn, experiment, and find better ways to build and ship software. For me, good development is about building software that is simple, maintainable, and built to last.
 </p>
-                        <div className={classes.headCta}>
-                            <a href="/ResumeNew (3).pdf" target="_blank" className={classes.headResume}>
-                                <FiFileText /> Resume
-                            </a>
-                            <div className={classes.headSocials}>
-                                <a href="https://mail.google.com/mail/?view=cm&to=srushtideshmukh54@gmail.com" aria-label="Email" target="_blank" rel="noreferrer" className={`${classes.socialIcon} ${classes.socialMail}`}><FiMail /></a>
-                                <a href="https://www.linkedin.com/in/srushti-deshmukh-616111221/" aria-label="LinkedIn" target="_blank" rel="noreferrer" className={`${classes.socialIcon} ${classes.socialLinkedin}`}><FiLinkedin /></a>
-                                <a href="https://github.com/Srushti2002" aria-label="GitHub" target="_blank" rel="noreferrer" className={`${classes.socialIcon} ${classes.socialGithub}`}><FiGithub /></a>
-                                <a href="https://instagram.com/srushtideshmukh27?igshid=ZWIzMWE5ZmU3Zg==" aria-label="Instagram" target="_blank" rel="noreferrer" className={`${classes.socialIcon} ${classes.socialInstagram}`}><FiInstagram /></a>
-                            </div>
-                        </div>
+                        <a href="/Srushti_Deshmukh_CV.pdf" target="_blank" className={classes.headResume}>
+                            <FiFileText /> Resume
+                        </a>
                     </div>
                     <div className={classes.headImg}>
-                        <div className={classes.headImgFrame}>
-                            <Image className={classes.headMainImg} src={myPortfolioPhoto} alt="Srushti Deshmukh" priority />
+                        <div className={classes.headImgCard}>
+                            <div className={classes.headImgFrame}>
+                                <Image className={classes.headMainImg} src={myPortfolioPhoto} alt="Srushti Deshmukh" priority />
+                            </div>
+                            <p className={classes.headImgCaption}>Software Developer</p>
                         </div>
-                        <p className={classes.headImgCaption}>Software Developer</p>
+                        <div className={classes.headSocials}>
+                            <a href="https://mail.google.com/mail/?view=cm&to=srushtideshmukh54@gmail.com" aria-label="Email" target="_blank" rel="noreferrer" className={`${classes.socialIcon} ${classes.socialMail}`}><FiMail /></a>
+                            <a href="https://www.linkedin.com/in/srushti-deshmukh-616111221/" aria-label="LinkedIn" target="_blank" rel="noreferrer" className={`${classes.socialIcon} ${classes.socialLinkedin}`}><FiLinkedin /></a>
+                            <a href="https://github.com/Srushti2002" aria-label="GitHub" target="_blank" rel="noreferrer" className={`${classes.socialIcon} ${classes.socialGithub}`}><FiGithub /></a>
+                            <a href="https://instagram.com/srushtideshmukh27?igshid=ZWIzMWE5ZmU3Zg==" aria-label="Instagram" target="_blank" rel="noreferrer" className={`${classes.socialIcon} ${classes.socialInstagram}`}><FiInstagram /></a>
+                        </div>
                     </div>
                 </div>
             </div>
