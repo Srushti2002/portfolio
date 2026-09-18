@@ -1,31 +1,46 @@
-*{
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0a0a0a;
+  color: #d4d7d6;
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
   text-decoration: none;
-  }
+  color: inherit;
+}
 
+::selection {
+  background: #10b981;
+  color: #0a0a0a;
+}
 
-/* .lightColor{
-  background-color: #FAEEE7;
-  color: #33272A;
-} */
+::-webkit-scrollbar {
+  width: 10px;
+}
 
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
 
+::-webkit-scrollbar-thumb {
+  background: #1c211f;
+  border-radius: 10px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-.darkColor{
-  background-color: #000000;
-  color: #ffffff;
+::-webkit-scrollbar-thumb:hover {
+  background: #10b981;
 }

@@ -23,11 +23,16 @@ export default function Contact(){
 
 
     return(
-        <div className={classes.contactRoot} id="newContact" > 
+        <div className={classes.contactRoot} id="newContact" >
         <div className={classes.contactLabel} data-aos="fade-up">
 
-            <p className={classes.contactMain}>Contact me for inquiries or collaboration</p>
-                
+            <p className={classes.contactTitle}>
+                <span className={classes.titleNumber}>05.</span> Contact
+                <span className={classes.titleLine}></span>
+            </p>
+            <p className={classes.contactMain}>Get In Touch</p>
+            <p className={classes.contactSub}>Have a project in mind or just want to say hi? My inbox is always open.</p>
+
       <form onSubmit={handleSubmit} className={classes.contactBox}>
       <label htmlFor="email">
         Email Address

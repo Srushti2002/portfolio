@@ -1,220 +1,107 @@
-.projectRoot{background-color: #FAEEE7;
-    padding: 100px 20px 100px 20px;
-    background-size: 100% 100%;
-    height: fit-content;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color:#33272A;
-    border: 10px solid #F9749C;
-    border-bottom:none;
-    border-top: none;
+@import 'variables';
+
+.projectRoot{
+    background-color: $bg;
+    color: $text-primary;
+    font-family: $font-sans;
+    padding: 100px 24px;
+
     .projectTitle{
-        font-size: 50px;
-        padding-left: 140px;
-        font-weight:bold; 
-        padding-bottom: 50px;
-    }
-    .content{
-        width : 100%;
-        .cards{
-            display: flex;
-            flex-direction: row;
-            column-gap: 100px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            padding-top: 21px;
-
-    .projectHolder{
-        height: 310px;
-        width: 310px;
-        background-color: #FAEEE7;
-        border-radius: 10px;
-        margin-bottom: 140px;
-        cursor: pointer;
-
-
-        .projectEach{
-            border: 5px solid #33272A;
-            border-radius: 15px;
-            padding: 10px 21px;
-            height: 341px;
-            .projectName{
-                font-size: 31px;
-                text-align: center;
-                height: 1rem;
-                font-weight: bold;
-            }
-
-            .projectData{
-                display: flex;
-                
-                justify-content: center;
-                align-items: center;
-                height: 280px;
-                padding-top: 10px;
-
-            .projectDescribe{
-                font-size: 25px;
-                text-align: justify;
-            }
-
-        
-
-
-        }
-        }
-    }
-}
-}
-
-
-}
-
-@media (max-width: 1000px){
-    .projectRoot{
-        padding: 50px 10px 50px 10px;
-        border: 10px solid #F9749C;
-        border-bottom:none;
-        border-top: none;
-    
-        .projectTitle{
-                font-size: 41px;
-                padding-left: 31px;
-                font-weight: bold;
-        }
-
-        .content{
-            margin-top: 10px;
-            
-            width: 95%;
-            .cards{
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: center;
-                justify-content:space-evenly;
-                flex-wrap: wrap;
-                padding-right: 0px;
-                
-        
-        .projectHolder{
-                    height: fit-content;
-                    background-color: #FAEEE7;
-                    border-radius: 10px;
-                    margin-bottom: 25px;
-
-                    cursor: pointer;
-                    
-                 
-    
-            .projectEach{
-                border: 5px solid #33272A;
-                border-radius: 15px;
-                padding: 5px 14px;
-                height: 341px;
-                .projectName{
-                    font-size: 31px;
-    
-    
-    
-                }
-                .projectData{
-                    display: flex;
-                    
-                    justify-content: center;
-                    align-items: center;
-                    padding-top: 10px;
-    
-    
-                .projectDescribe{
-                    font-size: 25px;
-                    text-align: justify;
-    
-                }
-
-            }
-            }
-        }
-
-    }
-
-}
-    }
- 
-
-}
-
-@media (max-width: 710px){
-    .projectRoot{
-        padding: 50px 10px 50px 37px;
-        border: 5px solid #F9749C;
-        border-bottom:none;
+        max-width: $container;
+        margin: 0 auto 50px auto;
         display: flex;
-        justify-content: center;
-        flex-direction: column;
-    
-    border-top: none;
-    
-        .projectTitle{
-            font-size: 31px;
-            padding-left: 0px;
-            padding-bottom: 0px;
-            font-weight: bold;
+        align-items: center;
+        font-family: $font-mono;
+        font-size: clamp(22px, 4vw, 30px);
+        font-weight: 600;
+        color: $text-primary;
+
+        .titleNumber{
+            color: $accent;
+            margin-right: 10px;
         }
 
-        .content{
-            margin-top: 30px;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            .cards{
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                column-gap: unset;
-                justify-content: space-between;
-                flex-wrap: wrap;
-        
-        .projectHolder{
-            height: fit-content;
-            width: auto;
-            background-color: #FAEEE7;
-            border-radius: 10px;
-            cursor: pointer;
-            display: flex;
-            padding-bottom: 30px;
-            margin: 0% auto;
-                    
+        .titleLine{
+            flex: 1;
+            height: 1px;
+            background-color: $border;
+            margin-left: 20px;
+        }
+    }
 
-            .projectEach{
-                border: 5px solid #33272A;
-                border-radius: 15px;
-                padding: 5px 14px;
-                height: 250px;
-                width: 200px;
-                .projectName{
-                font-size: 25px;
+    .content{
+        max-width: $container;
+        margin: 0 auto;
+
+        .cards{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 26px;
+
+            .projectHolder{
+                .projectEach{
+                    height: 100%;
+                    background-color: $bg-elevated;
+                    border: 1px solid $border;
+                    border-radius: 10px;
+                    padding: 28px 26px;
+                    display: flex;
+                    flex-direction: column;
+                    transition: border-color 0.2s ease, transform 0.2s ease;
+
+                    &:hover{
+                        border-color: $border-hover;
+                        transform: translateY(-4px);
+                    }
+
+                    .projectName{
+                        font-size: 20px;
+                        font-weight: 700;
+                        color: $text-primary;
+                        margin-bottom: 14px;
+                    }
+
+                    .projectData{
+                        flex: 1;
+
+                        .projectDescribe{
+                            font-size: 15px;
+                            line-height: 1.7;
+                            color: $text-secondary;
+                        }
+                    }
+
+                    .techStack{
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 8px;
+                        margin-top: 18px;
+                        padding-top: 16px;
+                        border-top: 1px solid $border;
+
+                        .techTag{
+                            font-family: $font-mono;
+                            font-size: 12px;
+                            color: $accent;
+                            background-color: $accent-soft;
+                            border-radius: 20px;
+                            padding: 4px 12px;
+                        }
+                    }
                 }
-                .projectData{
-                    justify-content: center;
-                    align-items: center;
-                    height: 240px;
-                    padding-top: 10px;
-    
-    
-                .projectDescribe{
-                    font-size: 21px;
-                    text-align: justify;
-    
-                }
-            }
             }
         }
-
     }
 }
 
+@media (max-width: 700px){
+    .projectRoot{
+        padding: 70px 18px;
+
+        .content{
+            .cards{
+                grid-template-columns: 1fr;
+            }
+        }
     }
-     
 }

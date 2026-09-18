@@ -1,459 +1,184 @@
+@import 'variables';
 
 .submitMessage{
-    border:10px solid #F9749C;
-    border-top:none;
-    background-color:#FAEEE7;
-    color:#33272A;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding: 97px 20px 97px 20px;
+    background-color: $bg;
+    color: $text-primary;
+    font-family: $font-sans;
+    padding: 140px 24px;
+    text-align: center;
+
     .submitMessageHeading{
-        padding: 10px 280px 140px 280px;
-        color: #33272A;
-        font-size: 50px;
-        text-align:center;
-        font-weight:bold;
+        color: $text-primary;
+        font-size: clamp(28px, 5vw, 40px);
+        font-weight: 700;
+        margin-bottom: 24px;
     }
     .submitMessageBox{
-        background-size: 50% 50%;
-        padding: 40px 40px 40px 40px;
-        margin: 20px 200px 140px 200px;
-        text-align:center;
-        background-color: #E2216A;
-        color: #ffffff;
-        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 21px;
-        font-weight: bold;
+        max-width: 520px;
+        margin: 0 auto;
+        padding: 24px 30px;
+        background-color: $bg-elevated;
+        border: 1px solid $border;
         border-radius: 10px;
+        color: $text-secondary;
+        font-size: 17px;
+        line-height: 1.6;
     }
     .submitContactLine{
-        font-size: 29px;
-        text-align: center;
-        padding: 31px 0px 0px 0px;
+        font-size: 16px;
+        color: $text-muted;
+        padding-top: 40px;
 
-        font-weight: bold;
-    .submitMyName{
-        color: #ffffff;
-        border: none;
-        border-radius: 10px;
-        background-color:#E2216A;
-        font-size: 29px;
-        font-weight: bold;
-        padding: 10px 10px 10px 10px;
-    }   
+        .submitMyName{
+            color: $accent;
+            font-weight: 600;
+        }
     }
-
 }
+
 .contactRoot{
-    
-    background-color: #FAEEE7;
-    padding: 100px 20px 100px 20px;
-    background-size: 100% 100%;
-    height: 100%;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    
-    
-    
-
-    
-    border: 10px solid #F9749C;
-    border-top: none;
-
-   
+    background-color: $bg;
+    color: $text-primary;
+    font-family: $font-sans;
+    padding: 100px 24px 60px 24px;
 
    .contactLabel{
-    .contactMain{
-        padding: 5vh 28vh 5vh 28vh;
-        color: #33272A;
-        font-size: 50px;
-        text-align:center;
-        font-weight:bold;
-        
-    }
-   
-    .contactBox{
-        margin: 5vh 47vh 5vh 47vh;
-        padding: 5vh 10vh 5vh 10vh;
-        background-color: #FAEEE7;
-        display:flex;
-        flex-direction:column;
-        border: 5px solid #33272A;
-
-        label{
-            padding: 10px 20px 5px 20px;
-            margin: 14px 20px 10px 20px;
-            background-color: #FAEEE7;
-            color:#33272A;
-            font-weight: bold;
-
-        }
-
-        input{
-            padding: 10px 20px 10px 20px;
-            margin: 14px 20px 14px 20px;
-            background-color: #FAEEE7;
-            border: 3.7px solid #33272A;
-            border-radius: 10px;
-            border-style:solid;
-            color:#33272A;
-        }
-
-        textarea{
-            background: #FAEEE7;
-            border: 3.7px solid #33272A;
-            border-style:solid;
-            border-radius: 10px;
-            color:#33272A;
-            padding: 10px 20px 10px 20px;
-            margin:14px 20px 14px 20px;
-        }
-
-        .contactButton{
-            border: none;
-            color: #FFFFFF;
-            background-color: #E2216A;
-            font-weight: bold;
-            margin: 3vh 3vh;
-            font-size: 21px;
-            border-style:solid;
-            border-radius: 10px;
-            padding: 2vh 3vh 2vh 3vh;
-
-            
-        }
-        
-    }
-
-
-    
-    
-    
-    
-    
-    .contactLastLine{
-        font-size: 29px;
+        max-width: 640px;
+        margin: 0 auto;
         text-align: center;
 
-        padding: 31px 0px 0px 0px;
-        
-        font-weight: bold;
+        .contactTitle{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: $font-mono;
+            font-size: clamp(20px, 4vw, 26px);
+            font-weight: 600;
+            color: $accent;
+            margin-bottom: 20px;
 
-    .myName{
-        color: #ffffff;
-        border: none;
-        border-radius: 10px;
-        background-color:#E2216A;
-        font-size: 29px;
-
-
-        font-weight: bold;
-        padding: 10px 10px 10px 10px;
-    }   
-    }
-}
-}
-
-@media (max-width: 1037px){
-
-    .submitMessage{
-        border:10px solid #F9749C;
-        border-top:none;
-        background-color:#FAEEE7;
-        color:#33272A;
-        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        padding: 54px 10px 67px 10px;
-
-        .submitMessageHeading{
-            padding: 30px 10px 30px 10px;
-            font-size: 41px;
-            text-align:center;
-        }
-        .submitMessageBox{
-            background-size: 50% 50%;
-            padding: 40px 40px 40px 40px;
-            margin: 67px 140px 72px 140px;
-            text-align:justify;
-            background-color: #E2216A;
-            color: #ffffff;
-            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            font-size: 25px;
-            font-weight: bold;
-            border-radius: 10px;
+            .titleNumber{
+                margin-right: 10px;
+            }
+            .titleLine{
+                display: none;
+            }
         }
 
-        .submitContactLine{
-            font-size: 31px;
-            text-align: center;
-    
-            padding: 31px 0px 0px 0px;
-            
-        font-weight: bold;
-    
-        .submitMyName{
-            color: #ffffff;
-            border: none;
-            border-radius: 10px;
-            background-color:#E2216A;
-            font-size: 31px;
-    
-    
-            font-weight: bold;
-            padding: 3px 5px 5px 5px;
-        }   
-        }
-    
-    }
-
-    
-    .contactRoot{
-    
-    padding: 50px 10px 50px 10px;
-    border: 10px solid #F9749C;
-    border-top: none;
-
-    //border-bottom: none;
-   
-    
-       .contactLabel{
         .contactMain{
-            padding: 30px 10px 30px 10px;
-            font-size: 41px;
-            text-align:center;
+            color: $text-primary;
+            font-size: clamp(32px, 6vw, 48px);
+            font-weight: 700;
+            margin-bottom: 18px;
         }
 
+        .contactSub{
+            color: $text-secondary;
+            font-size: 17px;
+            line-height: 1.6;
+            margin-bottom: 48px;
+        }
 
         .contactBox{
-            margin: 10px 100px 10px 100px;
-            padding: 31px 10px 31px 10px;
-        
-            display:flex;
-            flex-direction:column;
-            border: 5px solid #33272A;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            width: 100%;
+            box-sizing: border-box;
+            background-color: $bg-elevated;
+            border: 1px solid $border;
+            border-radius: 12px;
+            padding: 40px;
 
             label{
-                padding: 10px 20px 5px 20px;
-                margin: 14px 20px 3px 25px;
-                background-color: #FAEEE7;
-                color:#33272A;
-                font-weight: bold;
-    
+                font-family: $font-mono;
+                font-size: 13px;
+                color: $text-secondary;
+                margin-top: 22px;
+
+                &:first-child{
+                    margin-top: 0;
+                }
             }
-    
-            input{
-                padding: 10px 20px 10px 20px;
-                margin: 10px 47px 10px 47px;
-                background-color: #FAEEE7;
-                border: 3.7px solid #33272A;
-                border-style:solid;
-                color:#33272A;
-                border-radius: 10px;
-            }
-    
+
+            input,
             textarea{
-                border: 3.7px solid #33272A;
-                border-style:solid;
-                color:#33272A;
-                border-radius: 10px;
-                padding: 10px 20px 10px 20px;
-                margin: 10px 47px 10px 47px;
-                
+                width: 100%;
+                box-sizing: border-box;
+                background-color: $bg;
+                border: 1px solid $border;
+                border-radius: 8px;
+                color: $text-primary;
+                font-family: $font-sans;
+                font-size: 15px;
+                padding: 12px 16px;
+                margin-top: 8px;
+                transition: border-color 0.2s ease;
 
+                &:focus{
+                    outline: none;
+                    border-color: $accent;
+                }
             }
+
+            textarea{
+                min-height: 140px;
+                resize: vertical;
+            }
+
             .contactButton{
-                border: none;
-                color: #FFFFFF;
-                background-color: #E2216A;
-                font-weight: bold;
-                margin: 0px 65px;
-                font-size: 24px; 
+                align-self: center;
+                min-width: 180px;
+                border: 1px solid $accent;
+                color: $accent;
+                background-color: transparent;
+                font-family: $font-mono;
+                font-weight: 500;
+                font-size: 15px;
+                border-radius: 6px;
+                padding: 12px 26px;
+                margin-top: 32px;
+                cursor: pointer;
+                transition: background-color 0.2s ease, color 0.2s ease;
+
+                &:hover{
+                    background-color: $accent;
+                    color: $bg;
+                }
+
+                &:disabled{
+                    opacity: 0.6;
+                    cursor: not-allowed;
+                }
             }
         }
+
         .contactLastLine{
-            font-size: 31px;
+            font-size: 15px;
+            color: $text-muted;
             text-align: center;
-    
-            padding: 31px 0px 0px 0px;
-            
-        font-weight: bold;
-    
-        .myName{
-            color: #ffffff;
-            border: none;
-            border-radius: 10px;
-            background-color:#E2216A;
-            font-size: 31px;
-            
-    
-    
-            font-weight: bold;
-            padding: 5px 5px 5px 5px;
-        }   
+            padding-top: 60px;
+
+            .myName{
+                color: $accent;
+                font-weight: 600;
+            }
         }
-       }
-        
     }
-
-
 }
 
-@media (max-width: 710px){
+@media (max-width: 700px){
     .submitMessage{
-        border:5px solid #F9749C;
-        border-top:none;
-        background-color:#FAEEE7;
-        color:#33272A;
-        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        padding: 50px 10px 50px 10px;
-
-
-        
-        .submitMessageHeading{
-            
-            padding: 30px 10px 61px 10px;
-            font-size: 30px;
-            text-align:center;
-        }
-
-
-        
-        .submitMessageBox{
-            background-size: 50% 50%;
-            padding: 40px 32px 40px 32px;
-            margin: 20px 21px 75px 21px;
-            text-align:justify;
-            background-color: #E2216A;
-            color: #ffffff;
-            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            font-size: 18px;
-            font-weight: bold;
-            border-radius: 10px;
-        }
-        
-        .submitContactLine{
-            font-size: 24px;
-            text-align: center;
-            padding: 31px 10px 0px 10px;  
-            font-weight: bold;
-
-        .submitMyName{
-            color: #ffffff;
-            border: none;
-            border-radius: 10px;
-            background-color:#E2216A;
-            font-size: 21px;
-            font-weight: bold;
-            padding: 5px 5px 5px 5px;
-        }   
-        }  
-    }   
-    .contactRoot{
-    
-        background-color: #FAEEE7;
-        padding: 50px 10px 50px 10px;
-        background-size: 100% 100%;
-        height: 100%;
-        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-weight:bold;
-        
-
-    
-    border: 5px solid #F9749C;
-    border-top: none;
-
-    //border-bottom: none;
-   
-    
-       .contactLabel{
-        .contactMain{
-            padding: 30px 10px 30px 10px;
-            font-size: 30px;
-            text-align:center;
-        }
-
-
-        .contactBox{
-            margin: 10px 50px 10px 50px;
-            padding: 20px 10px 20px 10px;
-            background-color: #FAEEE7;
-            display:flex;
-            flex-direction:column;
-            border: 5px solid #33272A;
-
-            label{
-                padding: 10px 20px 5px 20px;
-                margin: 14px 20px 3px 6px;
-                background-color: #FAEEE7;
-                color:#33272A;
-                font-weight: bold;
-    
-            }
-    
-            input{
-                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        
-                padding: 10px 20px 10px 20px;
-                margin: 7px 13px 15px 14px;
-                background-color: #FAEEE7;
-                border: 3.7px solid #33272A;
-                border-style:solid;
-                color:#33272A;
-                border-radius: 10px;
-
-            }
-    
-            textarea{
-                background: #FAEEE7;
-                border: 3.7px solid #33272A;
-                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        
-                border-style:solid;
-                color:#33272A;
-                border-radius: 10px;
-                padding: 20px 20px 20px 20px;
-                margin: 7px 13px 15px 14px;
-                
-
-            }
-            .contactButton{
-                border: none;
-                color: #FFFFFF;
-                background-color: #E2216A;
-                font-weight: bold;
-                margin: 0px 52px;
-                font-size: 18px; 
-                
-            }
-        }
-        .contactLastLine{
-            font-size: 24px;
-            text-align: center;
-            padding: 31px 0px 0px 0px;
-            
-        font-weight: bold;
-
-
-    
-        .myName{
-            color: #ffffff;
-            border: none;
-            border-radius: 10px;
-            background-color:#E2216A;
-            font-size: 21px;
-            font-weight: bold;
-            padding: 5px 5px 5px 5px;
-
-
-
-        }   
-        }
-       }
-        
+        padding: 80px 18px;
     }
-    
-}    
 
+    .contactRoot{
+        padding: 70px 18px 40px 18px;
 
-
-
-
-
-
+        .contactLabel{
+            .contactBox{
+                padding: 26px 22px;
+            }
+        }
+    }
+}

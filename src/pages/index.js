@@ -2,16 +2,13 @@ import React from "react"
 import 'aos/dist/aos.css'
 import AOS from 'aos'
 import Head from "next/head"
-import { Inter } from 'next/font/google'
 import Header from '../components/head'
-import Aboutus from '../components/aboutus'
-import Skills from '../components/skill'
-import Projects from '../components/projects'
 import Experience from '../components/experience'
+import Projects from '../components/projects'
+import Skills from '../components/skill'
+import Education from '../components/education'
 import Contact from '../components/contact'
 
-
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
 
@@ -26,15 +23,15 @@ export default function Home() {
       <div>
        <Head>
         <title>Portfolio</title>
-        </Head> 
+        </Head>
           <Header />
-          <Aboutus />
-          <Skills />
-          <Projects />
           <Experience />
+          <Projects />
+          <Skills />
+          <Education />
           <Contact />
-    
+
     </div>
-    
+
   )
 }

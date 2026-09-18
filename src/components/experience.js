@@ -30,7 +30,10 @@ const experienceInfo = [
 export default function Experience(){
     return(
         <div className={classes.experienceRoot} id="newExperience">
-            <p className={classes.experienceTitle} data-aos="fade-up">Experience</p>
+            <p className={classes.experienceTitle} data-aos="fade-up">
+                <span className={classes.titleNumber}>01.</span> Experience
+                <span className={classes.titleLine}></span>
+            </p>
 
             <div className={classes.content}>
                 {
