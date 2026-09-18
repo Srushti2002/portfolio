@@ -16,16 +16,16 @@ export default function Header(){
             <div className={classes.headSubRoot}>
                 <div className={classes.headRow} data-aos="fade-up">
                     <div className={classes.headWrite}>
-                        <p className={classes.headKicker}>Hi, my name is</p>
-                        <h1 className={classes.headName}>Srushti Deshmukh.</h1>
-                        <p className={classes.headTagline}>I build things for the web.</p>
+                        <p className={classes.headKicker}>Hey There,</p>
+                        <h1 className={classes.headName}>I’m Srushti</h1>
+                        <p className={classes.headTagline}>I build, debug & ship for the web.</p>
                         <p className={classes.headAbout}>
-                            I&apos;m a full-stack web developer specializing in the MERN stack, turning ideas
-                            into responsive, scalable and user-focused applications. I started out in
-                            front-end development with HTML, CSS and JavaScript, then moved into the backend
-                            with Node.js, Express and MongoDB &mdash; building everything from JWT-authenticated
-                            apps to AI-integrated platforms.
-                        </p>
+                            I’m a Full-Stack Developer. I enjoy building scalable web applications, designing clean and reliable systems, and working across both frontend and backend.
+
+I like turning ideas into practical solutions and solving problems that require more than just writing code. I enjoy understanding how different parts of a system fit together, improving existing solutions, and exploring new technologies along the way.
+
+For me, development is not just about making things work — it’s about making them simple, maintainable, and built to last. I’m always curious to learn, experiment, and find better ways to build and ship software.
+</p>
                         <div className={classes.headCta}>
                             <a href="/ResumeNew (3).pdf" target="_blank" className={classes.headResume}>
                                 <FiFileText /> Resume

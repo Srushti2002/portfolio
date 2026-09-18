@@ -2,27 +2,26 @@ import classes from '../styles/experience.module.scss'
 
 const experienceInfo = [
     {
-        company: "Company Name",
-        role: "Software Engineer",
-        timeline: "Jan 2024 - Present",
-        techStack: ["React", "Node.js", "MongoDB"],
-        description: "Describe your key responsibilities and achievements in this role.",
+        company: "Agripal Farm Solutions",
+        role: "Software Developer",
+        timeline: "Jan 2026 - Present",
+        techStack: ["React", "Node.js", "MongoDB", "Express.js", "AWS"],
+        description: "Building and scaling a multi-tenant Learning Management System used by 1,000+ users across 5+ organizations, with features for learners, admins, and superadmins.",
         key: 0
     },
     {
-        company: "Company Name",
-        role: "Software Engineer Intern",
-        timeline: "Jun 2023 - Dec 2023",
-        techStack: ["JavaScript", "Express", "MySQL"],
-        description: "Describe your key responsibilities and achievements in this role.",
-        key: 1
+        company: "TATA Consultancy Services",
+        role: "Assistant System Engineer",
+        timeline: "Aug 2024 - Dec 2025",
+        techStack: ["React", "Node.js", "MongoDB", "Express.js"],
+        description: "Worked on a production insurance platform, building responsive React interfaces and Node.js APIs while handling validations, bug fixes, troubleshooting, and production issues."
     },
     {
-        company: "Company Name",
-        role: "Web Developer Intern",
-        timeline: "Jan 2023 - May 2023",
-        techStack: ["HTML", "CSS", "JavaScript"],
-        description: "Describe your key responsibilities and achievements in this role.",
+        company: "GBJ Buzz",
+        role: "Frontend Developer Intern",
+        timeline: "Dec 2023 - Jun 2024",
+        techStack: ["React", "Sanity CMS", "Tailwind CSS"],
+        description: "Built a client portfolio website highlighting their achievements, projects, and professional journey, with a responsive and polished UI. Integrated Sanity CMS for dynamic blog management and content updates.",
         key: 2
     },
 ]
