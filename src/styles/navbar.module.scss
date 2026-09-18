@@ -2,33 +2,31 @@
 
 .navBar{
     position: sticky;
-    top: 0;
+    top: 16px;
     z-index: 200;
-    background-color: rgba(10, 10, 10, 0.85);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid $border;
+    padding: 0 20px;
 
-    .navBarRoot{
+    .navPill{
         max-width: $container;
         margin: 0 auto;
-        padding: 18px 24px;
+        padding: 20px 16px 20px 28px;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+        gap: 24px;
+        background-color: rgba(17, 20, 19, 0.85);
+        backdrop-filter: blur(12px);
+        border: 1px solid $border;
+        border-radius: 999px;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
 
         .navLogo{
-            font-family: $font-mono;
+            font-family: $font-sans;
             font-weight: 700;
             font-size: 22px;
             color: $accent;
-            border: 1px solid $accent;
-            border-radius: 6px;
-            padding: 4px 10px;
-
-            &:hover{
-                background-color: $accent-soft;
-            }
+            white-space: nowrap;
         }
 
         .navBarList{
@@ -36,29 +34,54 @@
             flex-direction: row;
             align-items: center;
             list-style: none;
-            gap: 6px;
+            gap: 4px;
 
             a{
                 font-family: $font-mono;
-                font-size: 15px;
+                font-size: 13px;
+                letter-spacing: 0.04em;
+                text-transform: uppercase;
                 color: $text-secondary;
                 padding: 8px 14px;
-                border-radius: 6px;
-                transition: color 0.2s ease;
-
-                span{
-                    color: $accent;
-                    margin-right: 4px;
-                }
+                border-radius: 999px;
+                transition: color 0.2s ease, background-color 0.2s ease;
 
                 &:hover{
                     color: $text-primary;
+                    background-color: rgba(255, 255, 255, 0.06);
                 }
             }
         }
 
-        .navMobile{
-            display: none;
+        .navActions{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 14px;
+
+            .navResume{
+                display: inline-flex;
+                align-items: center;
+                background-color: $accent;
+                color: $bg;
+                font-family: $font-mono;
+                font-size: 13px;
+                font-weight: 600;
+                letter-spacing: 0.04em;
+                text-transform: uppercase;
+                padding: 10px 22px;
+                border-radius: 999px;
+                white-space: nowrap;
+                transition: background-color 0.2s ease;
+
+                &:hover{
+                    background-color: $accent-hover;
+                }
+            }
+
+            .navMobile{
+                display: none;
+            }
         }
     }
 }
@@ -67,7 +90,7 @@
     position: relative;
 
     .mobileNavIcon{
-        font-size: 26px;
+        font-size: 24px;
         color: $text-primary;
         cursor: pointer;
     }
@@ -106,15 +129,42 @@
     }
 }
 
-@media (max-width: 700px){
+@media (max-width: 800px){
     .navBar{
-        .navBarRoot{
+        .navPill{
             .navBarList{
                 display: none;
             }
 
-            .navMobile{
-                display: block;
+            .navActions{
+                .navResume{
+                    display: none;
+                }
+
+                .navMobile{
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 700px){
+    .navBar{
+        top: 0;
+        padding: 0;
+
+        .navPill{
+            max-width: 100%;
+            padding: 16px 18px;
+            border-radius: 0;
+            border: none;
+            border-bottom: 1px solid $border;
+            box-shadow: none;
+            background-color: rgba(10, 10, 10, 0.92);
+
+            .navLogo{
+                font-size: 18px;
             }
         }
     }
