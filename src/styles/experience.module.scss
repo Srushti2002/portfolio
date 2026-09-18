@@ -1,0 +1,178 @@
+.experienceRoot{
+    background-color: #FAEEE7;
+    padding: 100px 20px 100px 20px;
+    background-size: 100% 100%;
+    height: fit-content;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:#33272A;
+    border: 10px solid #F9749C;
+    border-top: none;
+    border-bottom: none;
+
+    .experienceTitle{
+        font-size: 50px;
+        padding-left: 140px;
+        font-weight:bold;
+        padding-bottom: 50px;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 40px;
+        padding: 0px 140px;
+
+        .experienceHolder{
+            width: 100%;
+            max-width: 900px;
+            cursor: pointer;
+
+            .experienceEach{
+                border: 5px solid #33272A;
+                border-radius: 15px;
+                padding: 25px 35px;
+
+                .experienceHeader{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: baseline;
+                    flex-wrap: wrap;
+                    row-gap: 5px;
+
+                    .company{
+                        font-size: 31px;
+                        font-weight: bold;
+                    }
+                    .timeline{
+                        font-size: 21px;
+                        color: #F9749C;
+                        font-weight: bold;
+                    }
+                }
+
+                .role{
+                    font-size: 25px;
+                    font-style: italic;
+                    padding-top: 5px;
+                    padding-bottom: 15px;
+                }
+
+                .techStack{
+                    display: flex;
+                    flex-wrap: wrap;
+                    column-gap: 10px;
+                    row-gap: 10px;
+                    padding-bottom: 15px;
+
+                    .techTag{
+                        border: 2.7px solid #33272A;
+                        border-radius: 20px;
+                        padding: 5px 15px;
+                        font-size: 18px;
+                    }
+                }
+
+                .description{
+                    font-size: 22px;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px){
+    .experienceRoot{
+        padding: 50px 10px 50px 10px;
+        border: 10px solid #F9749C;
+        border-top: none;
+        border-bottom: none;
+
+        .experienceTitle{
+            font-size: 41px;
+            padding-left: 31px;
+            font-weight: bold;
+        }
+
+        .content{
+            padding: 0px 21px;
+            row-gap: 30px;
+
+            .experienceHolder{
+                .experienceEach{
+                    padding: 20px 25px;
+
+                    .experienceHeader{
+                        .company{
+                            font-size: 27px;
+                        }
+                        .timeline{
+                            font-size: 19px;
+                        }
+                    }
+                    .role{
+                        font-size: 22px;
+                    }
+                    .techStack{
+                        .techTag{
+                            font-size: 16px;
+                        }
+                    }
+                    .description{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 710px){
+    .experienceRoot{
+        padding: 50px 10px 50px 37px;
+        border: 5px solid #F9749C;
+        border-top: none;
+        border-bottom: none;
+
+        .experienceTitle{
+            font-size: 31px;
+            padding-left: 0px;
+            padding-bottom: 30px;
+        }
+
+        .content{
+            padding: 0px 10px 0px 0px;
+            row-gap: 25px;
+
+            .experienceHolder{
+                .experienceEach{
+                    padding: 15px 18px;
+
+                    .experienceHeader{
+                        flex-direction: column;
+                        .company{
+                            font-size: 23px;
+                        }
+                        .timeline{
+                            font-size: 16px;
+                        }
+                    }
+                    .role{
+                        font-size: 18px;
+                    }
+                    .techStack{
+                        .techTag{
+                            font-size: 14px;
+                            padding: 4px 10px;
+                        }
+                    }
+                    .description{
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+}

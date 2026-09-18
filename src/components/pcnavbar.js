@@ -19,6 +19,7 @@ export default function Pcnavbar(){
                     <li><a href="#newAboutUs">About me</a></li>
                     <li><a href="#newSkill">Skills</a></li>
                     <li><a href="#newProject">Projects</a></li>
+                    <li><a href="#newExperience">Experience</a></li>
                     <li><a href="#newContact">Contact</a></li>
                     <div className={classes.navHire}>
                     <GiHamburgerMenu className={classes.navHireImg} onClick={click} height="31px" width="21px" />

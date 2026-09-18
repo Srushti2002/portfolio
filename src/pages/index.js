@@ -7,6 +7,7 @@ import Header from '../components/head'
 import Aboutus from '../components/aboutus'
 import Skills from '../components/skill'
 import Projects from '../components/projects'
+import Experience from '../components/experience'
 import Contact from '../components/contact'
 
 
@@ -28,8 +29,9 @@ export default function Home() {
         </Head> 
           <Header />
           <Aboutus />
-          <Skills /> 
+          <Skills />
           <Projects />
+          <Experience />
           <Contact />
     
     </div>
