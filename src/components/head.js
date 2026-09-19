@@ -24,7 +24,7 @@ function TypingName(){
 
                 if(i >= TYPING_TEXT.length){
                     deleting = true
-                    timeoutId = setTimeout(tick, 1400)
+                    timeoutId = setTimeout(tick, 3500)
                     return
                 }
                 timeoutId = setTimeout(tick, 110)
@@ -34,7 +34,7 @@ function TypingName(){
 
                 if(i <= 0){
                     deleting = false
-                    timeoutId = setTimeout(tick, 3500)
+                    timeoutId = setTimeout(tick, 500)
                     return
                 }
                 timeoutId = setTimeout(tick, 60)
