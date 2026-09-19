@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import classes from '../styles/head.module.scss'
 import Pcnavbar from "./pcnavbar"
 import { FiLinkedin, FiGithub, FiInstagram, FiMail, FiFileText } from "react-icons/fi"
@@ -7,6 +7,52 @@ import myPortfolioPhoto from '../images/portfolio_photo.jpeg'
 
 import Image from "next/image"
 
+const TYPING_TEXT = "I’m Srushti"
+
+function TypingName(){
+    const [text, setText] = useState("")
+
+    useEffect(() => {
+        let i = 0
+        let deleting = false
+        let timeoutId
+
+        const tick = () => {
+            if(!deleting){
+                i += 1
+                setText(TYPING_TEXT.slice(0, i))
+
+                if(i >= TYPING_TEXT.length){
+                    deleting = true
+                    timeoutId = setTimeout(tick, 1400)
+                    return
+                }
+                timeoutId = setTimeout(tick, 110)
+            } else {
+                i -= 1
+                setText(TYPING_TEXT.slice(0, i))
+
+                if(i <= 0){
+                    deleting = false
+                    timeoutId = setTimeout(tick, 3500)
+                    return
+                }
+                timeoutId = setTimeout(tick, 60)
+            }
+        }
+
+        timeoutId = setTimeout(tick, 110)
+
+        return () => clearTimeout(timeoutId)
+    }, [])
+
+    return (
+        <h1 className={classes.headName}>
+            {text}
+            <span className={classes.headCaret}>&nbsp;</span>
+        </h1>
+    )
+}
 
 export default function Header(){
 
@@ -17,7 +63,7 @@ export default function Header(){
                 <div className={classes.headRow} data-aos="fade-up">
                     <div className={classes.headWrite}>
                         <p className={classes.headKicker}>Hey There,</p>
-                        <h1 className={classes.headName}>I’m Srushti</h1>
+                        <TypingName />
                         <p className={classes.headTagline}>I build, debug & ship for the web.</p>
                         <p className={classes.headAbout}>I’m a Full-Stack Developer who enjoys building scalable web applications and designing clean, reliable systems across the frontend and backend. I like turning ideas into practical solutions and solving problems that go beyond just writing code.
 
